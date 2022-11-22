@@ -1,41 +1,255 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Jody Depp | Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+   <!-- Place favicon.ico in the root directory -->
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:wght@200;300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <body>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <header>
+      <div class="content-wrapper">
+        <nav>
+          <ul> 
+            <li><a href="#work">projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact" id="contact-link">contact me</a></li>
+          </ul>
+        </nav>
 
-<body>
+        <div class="greeting">
+          <h1>Heyyyy there! I'm Jody.</h1>
+          <h2> As a Front End Developer, I enjoy creating clean, dynamic websites. I look forward to working with you!</h2>         
+        </div>
+      </div>
+    </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <main> 
+      <article class="portfolio">
+        <section id="work">
+          <div class="content-wrapper">
+            <h3 class="portfolio-header">Projects</h3>
+            <div class="portfolio-wrapper">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+              <div class="project-box">
+                <figure> 
+                  <a href="https://jodepp.github.io/unplugged-retreat/" target="_blank">
+                  <img src="img/nature-woman.png" alt="Woman in Nature">
+                  </a>
+                </figure>
+                <h4>Unplugged Retreat</h4>
+                <p class="project-description">Unplugged Retreat is a fun multi-page responsive website to get you dreaming of your next 
+                relaxing work retreat. I used Flexbox and Media Queries to make the site adjustable to your phone, tablet or desktop!
+                </p>
+                <p>
+                  <span>Skills:</span>Breakpoints, Responsive Typography, Flexbox, HTML5 & CSS3
+                </p>
+                <p>
+                  <span>Tools:</span>Text Editor, Photoshop, Git, GitHub and Dev Tools
+                </p>
+                <a class="project-link" href=" https://jodepp.github.io/unplugged-retreat/" target="_blank">Live Page              
+                </a>
+              </div>
+
+              <div class="project-box">
+                <figure> 
+                  <a href="https://jodepp.github.io/github-repo-gallery/" target="_blank">
+                  <img src="img/github-repo.png" alt="GitHub Gallery">
+                  </a>
+                </figure> 
+                  <h4>GitHub Repo Gallery</h4>
+                    <p class="project-description">This gallery is a more visually appealing view of my GitHub Repo. 
+                    Coded with HTML, CSS and JavaScript
+                    </p>
+                      <p>
+                        <span>Skills:</span>JavaScript, Version Control, Responsive Design, HTML5 & CSS3
+                      </p>
+                      <p>
+                        <span>Tools:</span>Git and GitHub Pages, REST API, DOM Manipulation
+                      </p>
+                        <a class="project-link" href=" https://jodepp.github.io/github-repo-gallery/" target="_blank">Live Page   
+                        </a>
+              </div>
+
+              <div class="project-box">
+                <figure>
+                  <a href="https://95kphc.csb.app/" target="_blank">
+                  <img src="img/sticky-note.png" alt="Sticky Notes App">
+                  </a>
+                </figure>
+                <h4>Sticky Notes App</h4>
+                  <p class="project-description">Interactive App to create, edit and delete sticky notes. 
+                  Created in CodeSandbox with JavaScript, React, Data Flow Management, ES6, JSX, DOM Manipulation. 
+                  </p>
+                  <p>
+                   <span>Skills:</span>JSX-React, DOM Manipulation, ES6, Managed Data Flow
+                  </p>
+                  <p>
+                    <span>Tools:</span>CodeSandbox, State, Props
+                  </p>
+                  <a class="project-link" href="https://95kphc.csb.app/" target="_blank">Live Page
+                  </a>                     
+              </div>
+        
+              <div class="project-box">
+                <figure>
+                  <a href=https://d9d74v.csb.app/ target="_blank">
+                  <img src="img/hotel-search.png" alt="Hotel Search Tool">
+                  </a>
+                </figure>
+                <h4>Hotel Search Tool</h4>
+                  <p class="project-description">"
+                  This hotel search app that lets you filter hotels by amenities and services. Developed in CodeSandbox 
+                  using JavaScript, ES6, JSX, DOM manipulation and React. I used Array data models, callback functions 
+                  and moved functional components to stateful components to manage the state of the selected filters.
+                  </p>
+                  <p>
+                    <span>Skills:</span>JSX-React, DOM Manipulation, ES6, Managed Data Flow
+                  </p>
+                  <p>
+                    <span>Tools:</span>CodeSandbox, State, Props
+                  </p>
+                  <a class="project-link" href="https://d9d74v.csb.app/" target="_blank">Live Page    
+                  </a>
+              </div>
+
+              <div class="project-box">
+                <figure>
+                  <a href= https://jodepp.github.io/guess-the-word/ target="_blank">
+                  <img src="img/guess-word-game.png" alt="Guess the Word Game">
+                  </a>
+                </figure>
+                <h4>Guess the Word Game</h4>
+                  <p class="project-description">A fun game to pass your time guessing which letters make up the blank spaces for a word.  
+                  You get a limited number of guesses, then the game ends and you can start a new one.
+                  </p>
+                  <p>
+                    <span>Skills:</span>JavaScript
+                  </p>
+                  <p>
+                    <span>Tools:</span>"Text Editor, GitHub Pages, JSON
+                  </p>
+                  <a class="project-link" href="https://jodepp.github.io/guess-the-word" target="_blank">Live Page</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="content-wrapper">
+            <h3 class="skills-header">Skills</h3>
+            <h4> Developer Skills</h4>
+              <div class="skills-wrapper">
+                <p class="skill">HTML & CSS</p>
+                <p class="skill">JavaScript, ES6 & JSX</p>
+                <p class="skill">React</p>
+                <p class="skill">Responsive Web Development</p>
+                <p class="skill">Git & Command Line</p>
+                <p class="skill">FTP & Web Hosting</p>
+                <p class="skill">Flexbox</p>
+                <p class="skill">API's</p>
+                <p class="skill">Data Flow Management</p>
+              </div>
+            <h4>Tech Tools</h4>
+              <div class="tool-wrapper">
+                <p class="tool">GitHub Pages</p>
+                <p class="tool">Chrome Dev Tools</p>
+                <p class="tool">Adobe Photoshop</p>
+                <p class="tool">CodeSandbox</p>
+                <p class="tool">VS Studio Code</p>
+              </div>
+          </div>
+        </section>  
+
+        <section id="about">
+          <div class="content-wrapper">
+            <div class="about-content-wrapper">
+              <figure>
+                <img src="img/headshot1.jpeg" alt id="headshot">
+              </figure>
+
+              <div class="about-me">
+                <h3>Hey there! I'm Jody Depp.</h3>
+                <h4>A Front End Web Developer! I'm excited about coding and creating clean dynamic websites.</h4>
+                <p class="about-text">
+                I love working with data, so when I stumbled across coding during covid--I was like
+                <span>"Whoa where have you been all my life!!"</span>. I enjoy the concrete aspect of development with the ability to be creative.
+                When I'm not coding, you'll find me on the soccer fields or in nature with my three kiddos and husband.
+                </p>
+                <p>
+                  <span>I would love to work on your team and continue learning from a variety of development professionals.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer id="contact">
+      <div class="content-wrapper">
+        <h3>Let's Connect!</h3>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h5>Hire Me!</h5>
+            <p>jodydepp@gmail.com</p>
+            <p>828-999-8293</p>
+          </div>
+
+          <div class="conact-info follow-section">
+            <h5 class="contact-title">Follow Me!</h5>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.linkedin.com/in/jody-depp-513229201/" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/JoDepp" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-info">
+            <h5 class="contact-title">Meet Me!</h5>
+              <p>Hickory, NC</p>
+              <p>If you're in the foothills of North Carolina let me know!</p>
+          </div>   
+        </div>
+      </div>
+      <p>Copyright <script>document.write(new Date().getFullYear())</script> | Jody Depp</p>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 
 </html>
