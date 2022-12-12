@@ -89,20 +89,25 @@ textarea {
 body {
   background-color: white;
   color: #351D77;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 200;
-  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
     
-Header{
-  padding-top: 30px;
-  padding-bottom: 60px;
+header {
   background-color: #eee4f0;
 }
 
+h1, h3, h4 {
+  font-weight: bold;
+}
+
 header, #work, #skills, #about, #contact {
-  font-family: Alata;
+  font-family: 'Alata', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -113,11 +118,12 @@ header, #work, #skills, #about, #contact {
   width: 85%
 }
 
-nav {
+header nav ul li {
   display: block;
   text-transform: uppercase;
-  margin-bottom: 60px;
-  font-family: 'Alata', sans-serif;
+  margin-bottom: 40px;
+  font-size: .75rem;
+  font-weight: bold;
 }
 
 a {
@@ -132,37 +138,52 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-
-h1, .portfolio-header {
-  font-weight: bold;
-  padding: 30px;
-}
-
-h2 {
-  font-weight: normal;
-}
     
 li {
   line-height: 1.5 em;
   color: #351D77;
-  font-size: 15px;
+}
+
+#work p, #about p {
+  text-align: left;
+  width: 100%;
 }
 
 #contact-link {
   background-color:	#7f8f7c;
+  color: #eee4f0;
   padding: 10px 10px;
   border-radius: 30px;
 }    
 
-/*********** main section ******************/
-    
-#work h3{
-  width: 100%;
+h1, .portfolio-header {
+  padding: 30px;
+  font-size: 1.75rem;
+  line-height: 1.5;
 }
 
+h2 {
+  margin-top: 30px;
+  font-size: 1.25rem;
+ }
+
+ header .content-wrapper {
+  margin: 30px 0 30px 0;
+}
+/*********** main section ******************/
+    
+
 h3{
-  margin-bottom: 20px;
-  font-size: 1.75em;
+  margin-bottom: 0;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+main .content-wrapper {
+  margin: 80px 0 80px 0;
 }
 
 .portfolio-wrapper{
@@ -178,59 +199,160 @@ h3{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 10px 0 40px 0;
 }
 
+
 figure{
-  margin: 20px 0 40px 0;
-  width: 100%;
+  margin: 20px 0 20px 0;
   display: block;
 }
 
 img{
   width: 100%;
-}
-
-span{
-  font-weight: bold;
-
+  filter: drop-shadow(1px 2px 6px lightgrey);
 }
 
 .project-description{
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
- #about p, #work p{
+#work p span, #about p{
   text-align: left;
+}
+
+#work span {
+  font-weight: bold;
 }
 
 .project-link{
   background-color:	#7f8f7c;
-  padding: 10px 10px;
+  color:#eee4f0;
+  padding: .75rem 3.75rem;
   border-radius: 30px;
+  margin-top: 40px;
 }
 
-article {
-    
-}
-    
-section {
-    
+.project-link, .skills-wrapper p, .tool-wrapper p{
+  text-transform: uppercase;
+  font-size: 1.125rem;
 }
 
 #skills {
   background-color: #eee4f0;
-
 }
+
+.skill, .tool{
+  color: #eee4f0;
+}
+
+.skills-header{
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.skills-wrapper p, .tool-wrapper p{
+  background-color: #7f8f7c;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.tool-wrapper {
+  margin-bottom: 80px;
+}
+
+#headshot {
+  width: 90%;
+}
+
+.about-me h3 {
+  margin: 40px 0 40px 0;
+}
+
+.about-me h4 {
+  font-weight: 200;
+}
+
+.about-text {
+  margin-bottom: 30px;
+}
+
+#about span{
+  font-style: italic;
+}
+
+/*********************footer section************************/
     
 footer {
   background-color: #eee4f0;
+  padding: 80px 0;
 }
-/*tablet styles*/
+
+#contact h3 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-info, p, li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info h4 {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 60px;
+  
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  
+ }
+
+ footer .social-icons li{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+.social-icons li i{
+  font-size: 1.875rem;
+}
+
+a {
+  color:#351D77;
+  background-color: transparent;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.fa {
+  display: inline-block;
+ 
+}
+/************************tablet styles************************************/
     @media(min-width: 768px){
       
     }
 
-/*desktop styles*/
+/***********************desktop styles**************************************/
     @media(min-width: 940px){
 
     }
