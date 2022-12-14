@@ -183,7 +183,7 @@ h4 {
 }
 
 main .content-wrapper {
-  margin: 80px 0 80px 0;
+  margin: 20px 0 20px 0;
 }
 
 .portfolio-wrapper{
@@ -199,12 +199,12 @@ main .content-wrapper {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0 40px 0;
+  margin: 20px 0 40px 0;
 }
 
 
 figure{
-  margin: 20px 0 20px 0;
+  margin: 20px 0 40px 0;
   display: block;
 }
 
@@ -215,6 +215,10 @@ img{
 
 .project-description{
   margin: 0 0 20px 0;
+}
+
+#work {
+  padding-top: 40px;
 }
 
 #work p span, #about p{
@@ -293,18 +297,17 @@ footer {
   margin-bottom: 60px;
 }
 
-.contact-info, p, li {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .contact-info h4 {
   margin-bottom: 20px;
 }
 
 .contact-info {
   margin-bottom: 60px;
-  
+}
+
+.contact-info, p, li {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 footer ul {
@@ -349,7 +352,132 @@ a {
 }
 /************************tablet styles************************************/
     @media(min-width: 768px){
+      /*********header****************/
+      header, nav, ul, li {
+        margin-bottom: 40px;
+      }
+
+      .greeting, h1 {
+        font-size: 2.5rem;
+      }
+
+      .greeting, h1, h2 {
+        margin-bottom: 80px;
+      }
+
+      .greeting, h2 {
+        font-size: 1.5rem;
+      }
+
+      /*************main*************/
+      .portfolio-header, h3 {
+        font-size: 2rem;
+        margin-bottom: 60px;
+      }
+
+      .content-wrapper {
+        max-width: 640px;
+        width: 85%;
+      }
       
+      .portfolio-wrapper {
+        justify-content: space-around;
+      }
+
+      .project-box {
+        width: 45%;
+        align-items: center;
+      }
+
+      .project-box, h4 {
+        margin-bottom: 40px;
+      }
+      
+      .project-description {
+        margin: 0 0 30px 0;
+      }
+
+      .project-link {
+        margin: 40px 0 60px 0;
+      }
+
+      #skills {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .skills-header {
+        margin-bottom: 40px;
+      }
+
+      .skills-wrapper , .tool-wrapper  {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-flow: row wrap;         
+      }
+
+      .skills-wrapper p, .tool-wrapper p {
+        padding: 15px 0;
+      }
+
+      .skill, .tool {
+        width: 45%;
+      }
+
+     #about {
+      margin: 120px 0;
+     }
+     
+     #about figure {
+      width: 60%;
+     }
+
+     .about-content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+     }
+
+     .about-me h3 {
+      margin: 80px 0 80px 0;
+    }
+/***********footer************/
+    footer { 
+      padding-bottom: 80px;
+    }
+
+    footer .contact-info {
+      width: 30%;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    footer .social-icons {
+      width: 12em;
+      justify-content: space-evenly;
+    }
+    
+    footer .social-icons li i {
+      font-size: 2rem;
+    }
+
+    footer .copyright {
+      width: 100%;
+    }
+
+
     }
 
 /***********************desktop styles**************************************/
