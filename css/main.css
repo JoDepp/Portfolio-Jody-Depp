@@ -102,16 +102,16 @@ header {
   background-color: #eee4f0;
 }
 
-h1, h3, h4 {
+h1, h3, h4 , h5{
   font-weight: bold;
 }
 
-header, #work, #skills, #about, #contact {
+header, #work, #skills, #about, #contact, footer {
   font-family: 'Alata', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -299,32 +299,24 @@ footer {
   margin-bottom: 60px;
 }
 
-.contact-info h4 {
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  margin-bottom: 60px;
-}
-
-.contact-info, p, li {
-  font-size: 1rem;
-  line-height: 1.5;
+footer .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 footer ul {
   width: 100%;
 }
 
-footer .social-icons {
+footer .follow-section {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  
  }
 
- footer .social-icons li{
-  width: 40px;
-  height: 40px;
+ footer .social-icons {
   display: flex;
   justify-content: space-evenly;
  }
@@ -333,6 +325,14 @@ footer .social-icons {
   list-style-type: none;
   margin: 0;
   padding: 0;
+ }
+
+ footer .social-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
 .social-icons li i{
@@ -350,16 +350,29 @@ a {
 
 .fa {
   display: inline-block;
- 
+}
+
+.contact-info h4 {
+  margin-bottom: 20px;
+}
+
+footer .contact-info {
+  margin-bottom: 60px;
+  width: 60%;
 }
 /************************tablet styles************************************/
-    @media(min-width: 768px){
+    @media only screen and (min-width: 768px){
       
       header .content-wrapper {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
         padding-top: 40px;
+      }
+
+      .content-wrapper {
+        max-width: 640px;
+        
       }
 
       header nav ul li {
@@ -401,11 +414,6 @@ a {
       .portfolio-header h3 {
         font-size: 2rem;
         margin-bottom: 60px;
-      }
-
-      .content-wrapper {
-        max-width: 640px;
-        width: 85%;
       }
       
       .portfolio-wrapper {
@@ -509,11 +517,11 @@ a {
     }
 
 /***********************desktop styles**************************************/
-    @media(min-width: 1200px){
+    @media only screen and (min-width: 1200px){
 
       .content-wrapper {
         max-width: 1450px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
       }
       
       header .content-wrapper {
@@ -568,7 +576,7 @@ a {
       }
 
       #about {
-        margin: 140px 0 160px 0;
+        margin: 120px 0 160px 0;
       }
 
       #about figure {
@@ -592,6 +600,10 @@ a {
       p {
         font-size: 1.25rem;
       }
+/*---------footer section-------*/
+      footer .contact-info .follow-section {
+        width: 40%;
+      }
 
       footer {
         padding: 160px 0 160px 0;
@@ -605,19 +617,14 @@ a {
         margin-bottom: 80px;
       }
 
+      h4 .contact-title {
+        font-size: 1.5 rem;
+        width: 100%;
+      }
+      
       footer .social-icons {
         width: 12.5em;
-        margin-left: 60px;
-
       }
-
-      
-       
-        
-        justify-content: center;
-  
-      }
-     
 
     }
 /* ==========================================================================
