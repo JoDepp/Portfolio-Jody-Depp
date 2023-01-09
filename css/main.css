@@ -106,10 +106,6 @@ h1, h3, h4 , h5{
   font-weight: bold;
 }
 
-h5 {
-  text-transform: uppercase;
-}
-
 header, #work, #skills, #about, #contact, footer {
   font-family: 'Alata', sans-serif;
   display: flex;
@@ -144,7 +140,7 @@ ul {
 }
     
 li {
-  line-height: 1.5 em;
+  line-height: 1.5rem;
   color: #351D77;
 }
 
@@ -301,6 +297,12 @@ footer {
 #contact h3 {
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+
 }
 
 footer .contact-wrapper {
@@ -530,7 +532,7 @@ footer .contact-info {
 
     }
 
-/***********************desktop styles**************************************/
+/****************************desktop styles**************************************/
     @media only screen and (min-width: 1200px){
 
       .content-wrapper {
@@ -567,8 +569,8 @@ footer .contact-info {
       }
       /************main*************/
      
-      .portfolio-header h3 {
-        font-size: 2.5rem;
+      .portfolio-header {
+        font-size: 3rem;
         margin-bottom: 80px;
       }
 
@@ -577,7 +579,7 @@ footer .contact-info {
       }
 
       .skills-header {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
       #skills .content-wrapper {
