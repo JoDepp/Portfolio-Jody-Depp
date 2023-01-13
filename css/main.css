@@ -89,7 +89,7 @@ textarea {
 body {
   background-color: white;
   color: #351D77;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   margin: 0;
 }
@@ -102,12 +102,12 @@ header {
   background-color: #eee4f0;
 }
 
-h1, h3, h4 , h5 {
+h1, h3, h4 , h5, span {
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
 
 header, #work, #skills, #about, #contact, footer {
-  font-family: 'Alata', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
