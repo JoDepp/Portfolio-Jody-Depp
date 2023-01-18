@@ -91,6 +91,7 @@ body {
   color: #351D77;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -235,7 +236,7 @@ img {
   text-align: left;
 }
 
-#work span {
+#project-box span {
   font-weight: bold;
 }
 
