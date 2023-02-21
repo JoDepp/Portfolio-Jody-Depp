@@ -386,6 +386,15 @@ footer .contact-info {
   margin-left: .3rem;
 }
 
+/*CSS for Services Page*/
+
+.services-nav {
+  float:right;
+}
+.services h2 {
+  margin-bottom: 40px;
+}
+
 /************************tablet styles************************************/
     @media only screen and (min-width: 768px){
       
@@ -503,6 +512,16 @@ footer .contact-info {
      .about-me h3 {
       margin: 80px 0 80px 0;
     }
+
+    /*CSS for Services Page*/
+
+  .services-nav {
+    
+  }
+
+  .services {
+  margin: 20px; 
+  }
 /***********footer************/
     footer { 
       padding-bottom: 80px;
