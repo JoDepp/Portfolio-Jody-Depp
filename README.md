@@ -1,5 +1,6 @@
 # Portfolio-Jody-Depp
-Jody Depp's portfolio :)
-This was my final project at Skillcrush, to create a Portfolio. I have included several coded projects that I worked on during the training.
+I created this portfolio site with HTML, CSS and JavaScript. 
+On this site I have included several other projects that I have completed. 
 Live site: 
+https://jodydepp.us/
 https://jodepp.github.io/Portfolio-Jody-Depp/
